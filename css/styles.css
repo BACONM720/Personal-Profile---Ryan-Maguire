@@ -185,12 +185,13 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+  color: rgb(0, 18, 51);
 }
 
 ol,
 ul,
 dl {
-  margin-top: 0;
+  margin-top: 10;
   margin-bottom: 1rem;
 }
 
@@ -305,7 +306,8 @@ figure {
 
 img,
 svg {
-  vertical-align: middle;
+  position: relative;
+
 }
 
 table {
@@ -2946,8 +2948,8 @@ textarea.form-control-lg {
 }
 
 .btn-light {
-  --bs-btn-color: #000;
-  --bs-btn-bg: #f8f9fa;
+  --bs-btn-color: 0, 18, 51;
+  --bs-btn-bg: #CAC0B3;
   --bs-btn-border-color: #f8f9fa;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #d3d4d5;
@@ -4273,7 +4275,10 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+  position: relative;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-63%);
 }
 
 .card-img,
@@ -7009,6 +7014,8 @@ textarea.form-control-lg {
 
 .d-grid {
   display: grid !important;
+  align-items: center;
+  column-gap: 5px;
 }
 
 .d-table {
@@ -11591,7 +11598,7 @@ html {
   height: 80vw;
   max-height: 45rem;
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
 }
