@@ -602,6 +602,8 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
 }
 
 .img-thumbnail {
@@ -3730,15 +3732,15 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(202, 192, 179, 0.55);
-  --bs-navbar-hover-color: rgba(202, 192, 179, 0.7);
+  --bs-navbar-color:  0, 18, 51;
+  --bs-navbar-hover-color: rgba(19, 2, 2, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(202, 192, 179, 0.9);
-  --bs-navbar-brand-hover-color: rgba(202, 192, 179, 0.9);
+  --bs-navbar-brand-color:  rgba(0, 18, 51, 0.9);
+  --bs-navbar-brand-hover-color: rgba(19, 2, 2, 0.7);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -3956,6 +3958,7 @@ textarea.form-control-lg {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    background-color: rgba(202, 192, 179, 0.9);
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -11598,9 +11601,10 @@ html {
   height: 80vw;
   max-height: 45rem;
   position: absolute;
-  bottom: 2%;
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 2rem;
 }
 .profile .dots-1 {
   position: absolute;
