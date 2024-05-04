@@ -49,6 +49,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 202, 192, 179;
+  --bs-cards-rgb:  rgb(202, 192, 179);
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 0, 18, 51;
   --bs-black-rgb: 0, 0, 0;
@@ -248,6 +249,8 @@ sup {
 a {
   color: var(--bs-link-color);
   text-decoration: underline;
+  width: auto;
+  height: auto;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -304,10 +307,23 @@ figure {
   margin: 0 0 1rem;
 }
 
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
 img,
 svg {
   position: relative;
 
+}
+
+.scale{
+  transform: scale(1.065);
 }
 
 table {
@@ -600,7 +616,6 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
   height: auto;
   border-top-left-radius: 5rem;
   border-bottom-left-radius: 5rem;
@@ -2851,12 +2866,12 @@ textarea.form-control-lg {
   --bs-btn-color: #001233;
   --bs-btn-bg: #FF595A;
   --bs-btn-border-color: #FF595A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #CAC0B3;
+  --bs-btn-hover-color: #001233;
+  --bs-btn-hover-bg: #ffffff;
   --bs-btn-hover-border-color: #1826c2;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1826c2;
+  --bs-btn-active-bg: #FF595A;
   --bs-btn-active-border-color: #1724b6;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
@@ -8317,6 +8332,12 @@ textarea.form-control-lg {
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-card { 
+  --bs-bg-opacity: 1;
+
+  background-color:  rgb(199, 184, 165); 
 }
 
 .bg-dark {
