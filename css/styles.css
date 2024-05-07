@@ -616,9 +616,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-
+  border-radius: 10%;
 }
 
 .img-thumbnail {
@@ -11621,8 +11619,8 @@ html {
   height: 80vw;
   max-height: 45rem;
   position: absolute;
-  left: 8%;
   transform: translateY(-8%);
+  left: 40px;
   border-radius: 2rem;
   scale: 0.8;
 }
